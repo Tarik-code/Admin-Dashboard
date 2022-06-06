@@ -1,0 +1,353 @@
+/* Universal */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(44 44 44)
+  }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1.3fr;
+    grid-template-rows: 1fr 5fr;
+    background-color: #f9f9f9;
+    height: 100vh;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+
+
+/* Header  */
+.header {
+    grid-column: 2 / 4;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius:15px;
+    box-shadow: rgba(149 157 165 / 10%) 0px 8px 24px;
+    margin-right: 1vw;
+    padding-bottom: 1.5vh;
+}
+.upperMain {
+}
+.btnMain {
+    margin-left: 45px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.btnMain img {
+    height: 6vh;
+}
+
+.firstMain {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-right: 50px;
+    margin-left: 30px;
+    align-items: center;
+    gap: 15px;
+}
+
+.firstMain input{
+    width: 75%;
+    height: 2.5vh;
+    border-radius: 15px;
+    border: solid 1px white;
+    background-color: #f5f5f5;
+}
+.firstMain span {
+    font-size: 2.5vh;
+    color: rgb(63, 63, 63);
+}
+input:focus {
+    outline: none;
+}
+.secondMain {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 55px;
+    font-size: 1vw;
+}
+.secondMain span{
+    font-size: 1.4vw;
+}
+.headerBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerBtns button{
+    width: 20%;
+    height: 50%;
+    border-radius: 15px;
+    margin-left: 15px;
+    border: none;
+    color: white;
+    background-color: #52b788;
+    font-size: 1vw;
+}
+
+/* Sidebar */
+.sideBar {
+    grid-row: 1 / 4;
+    background-color: rgba(82 183 136 / 90%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: grid;
+    grid-template-rows: .4fr 4fr;
+    grid-template-columns: 1fr;
+    width: 14vw;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.mainDash {
+    margin: 10px;
+}
+.mainDash a{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    margin-top: 20px;
+}
+.mainDash a {
+    font-size: 1.5vw;
+
+}
+.mainDash span{
+    align-items: center;
+    padding: 10px;
+    font-size: 3.5vh;
+    color: white;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 3vh;
+
+}
+.navbar a{
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5vh;
+    border-radius: 15px;
+  }
+.navbar a:hover {
+        background-color: rgba(82 183 136/ 100%);
+        transition: background-color 200ms;
+        border-radius: 15px;
+}
+.navbar span {
+    align-items: center;
+    padding: 10px;
+    color: white;
+    
+}
+.otherOptions {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 1vh;
+    border-radius: 15px;
+}
+.otherOptions a:hover {
+    background-color: rgba(82 183 136/ 100%);
+    transition: background-color 200ms;
+    border-radius: 15px;
+}
+.otherOptions a {
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5vh;
+}
+
+.otherOptions span {
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Article Section */
+.article {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:2% 1fr 1fr 1fr;
+    gap: 30px;
+}
+.articleSec {
+    border: none;
+    border-left: solid 10px #5BC0EB;
+    background-color: #fff;
+    padding: 35px;
+    font-size: 1vw;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.articleIcons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.articleIcons button{
+    border: none;
+    background-color: white;
+    padding-top: 15px;
+}
+.articleIcons button:hover{
+    border: none;
+    background-color: white;
+    transform: scale(1.2);
+}
+.articleIcons span{
+    font-size: 1.3vw;
+
+}
+.articleTitle {
+    display: grid;
+    grid-column: 1 / 3;
+
+}
+.announceTitle {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.trending {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+/* Alerts Section */
+.alertsSec {
+    margin-right: 25px;
+    display: grid;
+}
+
+.announceSec {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    border: solid .5px #F0F0F0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: fit-content;
+}
+.announcementLi h5 {
+    font-size: 0.9vw;
+    margin-bottom: 0.25em;
+}
+.announcementLi p {
+    font-size: 0.6vw;
+}
+li {
+    list-style: none;
+    padding: 15px;
+}
+
+ul li:nth-child(-n + 2) {
+    border-bottom: 1px solid grey;
+}
+
+ul {
+    display: block;
+    padding-inline-start: 10px;
+}
+
+.trendingSec {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: fit-content;
+}
+.trendingSec img {
+    height: 3.5vh;
+}
+.trendingUsers {
+    display: flex;
+    flex-direction: column;
+    font-size: .9vw;
+    margin-left: 15px;
+    padding: 7px;
+}
+.users {
+    display: flex;
+    margin-bottom: 25px;
+
+}
+.avatar {
+    height: 50px;
+    width: 100px
+
+}
+
+/* fonts */
+.trending {
+    font-size: 1vw;
+}
+
+.announceTitle {
+    font-size: 1vw;
+}
+
+.articleTitle {
+    font-size: 1vw;
+}
+
+.mainTextTwo {
+    font-size: 1.2vw;
+}
+
+.mainTextTwo h6 {
+    font-size: 1.2vw;
+    color: #3f3f3f;
+}
+
+.secondMain p {
+    font-size: 1vw;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+.articleSec h5 {
+    font-size: 1vw;
+}
